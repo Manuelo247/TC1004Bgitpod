@@ -1,0 +1,16 @@
+#INCLUDE <STDIO.H>
+#INCLUDE <UNISTD.H>
+
+INT MAIN()
+{
+    INT PID = FORK();
+    IF(!PID)
+        {
+            PRINTF("SOY EL PROCESO HIJO; PID = %D\N", PID);
+        }
+        ELSE
+        {
+            PRINTF("SOY EL PROCESO PADRE; PID = %D\N", PID);
+    }
+    RETURN 0;
+}}
